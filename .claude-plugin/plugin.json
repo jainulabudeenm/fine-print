@@ -1,0 +1,9 @@
+{
+  "name": "fine-print",
+  "version": "1.0.0",
+  "description": "Audits a Figma component before handoff or Code Connect: six judgment questions, a name gate backed by your design system's lexicon, and a rule catalogue written against real Figma API fields. Always lists what Figma cannot hold, and can write the engineer's spec.",
+  "author": {
+    "name": "Zain",
+    "url": "https://github.com/jainulabudeenm"
+  }
+}

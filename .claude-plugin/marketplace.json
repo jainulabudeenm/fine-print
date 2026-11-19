@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "fine-print",
+  "description": "Reads the fine print of a Figma component before an engineer has to.",
+  "owner": {
+    "name": "Zain",
+    "url": "https://github.com/jainulabudeenm"
+  },
+  "plugins": [
+    {
+      "name": "fine-print",
+      "description": "Audits a Figma component as a contract a machine and an engineer can both read, then writes the spec.",
+      "source": "./",
+      "category": "design"
+    }
+  ]
+}

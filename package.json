@@ -1,0 +1,37 @@
+{
+  "name": "fine-print",
+  "version": "1.0.0",
+  "description": "Install the Fine Print skill for Claude. Audits a Figma component before handoff or Code Connect, checks names against your design system's lexicon, and writes the engineer's spec.",
+  "keywords": [
+    "claude",
+    "claude-skill",
+    "claude-code",
+    "figma",
+    "design-system",
+    "code-connect",
+    "design-handoff",
+    "component-audit"
+  ],
+  "author": "Zain Hasan",
+  "license": "MIT",
+  "bin": {
+    "fine-print": "bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "skills/fine-print.skill",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jainulabudeenm/fine-print.git"
+  },
+  "homepage": "https://github.com/jainulabudeenm/fine-print#readme",
+  "bugs": {
+    "url": "https://github.com/jainulabudeenm/fine-print/issues"
+  }
+}

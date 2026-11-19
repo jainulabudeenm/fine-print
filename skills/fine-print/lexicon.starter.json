@@ -1,0 +1,284 @@
+{
+  "$comment": "Starter lexicon: one agreed word per concept for a design system's property and layer names. Copy it into your design system repo as lexicon.json and make it yours. Every entry starts as 'starter'; change it to 'agreed' once your team agrees the word. Adding a word means forbidding its synonyms.",
+  "version": 1,
+  "updated": "2026-11-19",
+  "conventions": {
+    "case": "camelCase",
+    "booleanPrefix": "has",
+    "booleanPrefixRejected": [
+      "show",
+      "is",
+      "with",
+      "enable",
+      "display"
+    ],
+    "textSuffix": "Text",
+    "slotSuffix": "Slot",
+    "componentNamePattern": "Category/Type",
+    "note": "One prefix per system. Mixing has and show is the most common drift."
+  },
+  "names": [
+    {
+      "name": "headingText",
+      "type": "TEXT",
+      "means": "The first line of text in a component. The loudest thing in it.",
+      "insteadOf": [
+        "title",
+        "heading",
+        "header",
+        "label",
+        "cardTitle"
+      ],
+      "layerName": "headingText",
+      "status": "starter"
+    },
+    {
+      "name": "supportingText",
+      "type": "TEXT",
+      "means": "The quieter line under the heading. Explains, never instructs.",
+      "insteadOf": [
+        "subtext",
+        "subtitle",
+        "caption",
+        "description",
+        "secondaryText",
+        "body"
+      ],
+      "layerName": "supportingText",
+      "status": "starter"
+    },
+    {
+      "name": "helperText",
+      "type": "TEXT",
+      "means": "Guidance under an input. Becomes the error message when the field is in error.",
+      "insteadOf": [
+        "hint",
+        "helper",
+        "assistiveText",
+        "hintText"
+      ],
+      "layerName": "helperText",
+      "status": "starter"
+    },
+    {
+      "name": "placeholderText",
+      "type": "TEXT",
+      "means": "The sample text inside an empty input. Never a substitute for a label.",
+      "insteadOf": [
+        "placeholder",
+        "hint",
+        "ghostText"
+      ],
+      "layerName": "placeholderText",
+      "status": "starter"
+    },
+    {
+      "name": "icon",
+      "type": "INSTANCE_SWAP",
+      "means": "The one icon slot in a component. The component does not know what the icon means or what it does. The consumer says both.",
+      "insteadOf": [
+        "glyph",
+        "symbol",
+        "image",
+        "closeIcon",
+        "dismissIcon",
+        "Instance"
+      ],
+      "layerName": "icon",
+      "status": "starter",
+      "note": "When a component has two, use leadingIcon and trailingIcon. Never icon plus icon2."
+    },
+    {
+      "name": "leadingIcon",
+      "type": "INSTANCE_SWAP",
+      "means": "The icon at the start of the reading direction. Left in English, right in Arabic or Hebrew.",
+      "insteadOf": [
+        "leftIcon",
+        "startIcon",
+        "prefixIcon"
+      ],
+      "layerName": "leadingIcon",
+      "status": "starter",
+      "note": "Never left or right. Those words break in right-to-left languages."
+    },
+    {
+      "name": "trailingIcon",
+      "type": "INSTANCE_SWAP",
+      "means": "The icon at the end of the reading direction.",
+      "insteadOf": [
+        "rightIcon",
+        "endIcon",
+        "suffixIcon"
+      ],
+      "layerName": "trailingIcon",
+      "status": "starter"
+    },
+    {
+      "name": "listSlot",
+      "type": "SLOT",
+      "means": "The open area a consumer fills with anything. In code this is children.",
+      "insteadOf": [
+        "content",
+        "body",
+        "container",
+        "children",
+        "slot"
+      ],
+      "layerName": "listSlot",
+      "status": "starter",
+      "note": "A component with one slot may call it contentSlot. Name the slot for what goes in it, not where it sits."
+    },
+    {
+      "name": "hasHeading",
+      "type": "BOOLEAN",
+      "means": "Whether the heading block shows. Binds to the smallest frame holding only the heading.",
+      "insteadOf": [
+        "showHeading",
+        "hasTitle",
+        "showTitle",
+        "hasHeading?"
+      ],
+      "status": "starter"
+    },
+    {
+      "name": "hasSupportingText",
+      "type": "BOOLEAN",
+      "means": "Whether the supporting line shows.",
+      "insteadOf": [
+        "showSubtext",
+        "Show subtext",
+        "hasCaption",
+        "hasDescription"
+      ],
+      "status": "starter"
+    },
+    {
+      "name": "hasIcon",
+      "type": "BOOLEAN",
+      "means": "Whether the icon shows at all.",
+      "insteadOf": [
+        "showIcon",
+        "withIcon",
+        "iconVisible"
+      ],
+      "status": "starter"
+    },
+    {
+      "name": "usage",
+      "type": "VARIANT",
+      "means": "Where the component sits, which decides its shape only. Never which children appear.",
+      "options": [
+        "card",
+        "fullLength"
+      ],
+      "insteadOf": [
+        "kind",
+        "style",
+        "appearance",
+        "context"
+      ],
+      "status": "starter",
+      "note": "usage and variant may be the same concept in your system. Decide before a third component uses either."
+    },
+    {
+      "name": "size",
+      "type": "VARIANT",
+      "means": "How much space the component takes, at one text size.",
+      "options": [
+        "compact",
+        "large",
+        "multiline"
+      ],
+      "insteadOf": [
+        "scale",
+        "dimension",
+        "density",
+        "sm/md/lg"
+      ],
+      "status": "starter",
+      "note": "Spell the words out. sm, md, lg do not survive a fourth size."
+    },
+    {
+      "name": "labelPosition",
+      "type": "VARIANT",
+      "means": "Whether the label sits inside the field or above it.",
+      "options": [
+        "inside",
+        "outside"
+      ],
+      "insteadOf": [
+        "labelPlacement",
+        "labelStyle",
+        "layout"
+      ],
+      "status": "starter"
+    },
+    {
+      "name": "state",
+      "type": "VARIANT",
+      "means": "Documentation of what the component looks like in each state. NOT a code prop.",
+      "options": [
+        "active",
+        "hover",
+        "focus",
+        "filled",
+        "disabled",
+        "filledDisabled",
+        "error",
+        "errorFilled"
+      ],
+      "insteadOf": [
+        "status",
+        "mode"
+      ],
+      "status": "starter",
+      "note": "hover, focus, pressed and disabled are drawn by the platform. Only error and loading reach the code API."
+    }
+  ],
+  "codeOnly": [
+    {
+      "name": "onIconPress",
+      "type": "() => void",
+      "means": "Called when the icon is pressed. The component never acts on itself.",
+      "insteadOf": [
+        "onClose",
+        "onDismiss",
+        "onClick",
+        "handleClose"
+      ],
+      "note": "Named for the part, not for what the consumer does with it. A close card and an expand card share one callback."
+    },
+    {
+      "name": "iconLabel",
+      "type": "string",
+      "means": "What a screen reader says for the icon. Required whenever an icon shows.",
+      "insteadOf": [
+        "ariaLabel",
+        "a11yLabel",
+        "accessibilityLabel",
+        "alt"
+      ],
+      "note": "The component cannot guess this. A generic icon slot carries no meaning."
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "means": "The code side of a slot.",
+      "insteadOf": [
+        "content",
+        "body",
+        "slot"
+      ]
+    }
+  ],
+  "bannedEverywhere": {
+    "left": "breaks in right-to-left languages. use leading",
+    "right": "breaks in right-to-left languages. use trailing",
+    "Instance": "Figma default name",
+    "Property 1": "Figma default name",
+    "type": "reserved in several languages. use variant or usage",
+    "class": "reserved in JavaScript",
+    "new": "reserved in JavaScript",
+    "default": "reserved in JavaScript"
+  }
+}
