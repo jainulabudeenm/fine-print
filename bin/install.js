@@ -65,4 +65,4 @@ console.log(`\nAlso installable as a Claude Code plugin:`);
 console.log(`  /plugin marketplace add jainulabudeenm/fine-print`);
 console.log(`  /plugin install fine-print`);
 
-console.log(`\nTo update later: npx fine-print@latest\n`);
+console.log(`\nTo update later: npx @jainulabudeenm/fine-print@latest\n`);

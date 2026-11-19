@@ -23,8 +23,10 @@ In Claude Code, as a plugin:
 From npm, which also covers Claude.ai and anywhere outside Claude Code:
 
 ```
-npx fine-print
+npx @jainulabudeenm/fine-print
 ```
+
+The npm name is scoped because plain `fine-print` is blocked as too close to an existing package.
 
 It reads the component through the Figma MCP server (Dev Mode), so turn that on first.
 

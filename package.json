@@ -1,5 +1,5 @@
 {
-  "name": "fine-print",
+  "name": "@jainulabudeenm/fine-print",
   "version": "1.0.0",
   "description": "Install the Fine Print skill for Claude. Audits a Figma component before handoff or Code Connect, checks names against your design system's lexicon, and writes the engineer's spec.",
   "keywords": [
